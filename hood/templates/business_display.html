@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load bootstrap3 %}
+{% block content %}
+{% for business in businesses %}
+<div class="well wrapper">
+  <ul>
+    {{business.business_name}}
+  </ul>
+</div>
+{% endfor %}
+{% endblock %}
